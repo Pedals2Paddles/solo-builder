@@ -70,13 +70,13 @@ then
     exit 1
 fi
 
-#MACHINE=imx6solo-3dr-1080p bitbake 3dr-solo -c clean -f -k
+MACHINE=imx6solo-3dr-1080p bitbake 3dr-solo -c clean -f -k
 if [ ! $? -eq 0 ]
 then
     exit 1
 fi
 
-#MACHINE=imx6solo-3dr-artoo bitbake 3dr-controller -c clean -f -k
+MACHINE=imx6solo-3dr-artoo bitbake 3dr-controller -c clean -f -k
 if [ ! $? -eq 0 ]
 then
     exit 1
